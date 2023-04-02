@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frozen Fever</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- font link -->
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&display=swap" rel="stylesheet">
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    
+
+    body {
+      color: white;
+      background: radial-gradient(#0ca0dc 20%,#012cb7, #00116d );
+    }
+
+    section {
+      margin-bottom: 2%;
+    }
+
+    h2 {
+      font-size: 200%;
+      text-align: center;
+      padding: 5%;
+
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 180%;
+      padding: 1%;
+
+    }
+
+    .card-group {
+
+      padding: 3%;
+    }
+
+    .card {
+      margin: 0.5%;
+      border: 1px solid white;
+      color: white;
+      background-color: #00116d;
+      background: linear-gradient(#0ca0dc , #012cb7 , #00116d );
+
+    }
+
+    #ulst {
+      margin-inline: 10%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+
+    }
+
+    .list-group-item {
+
+      text-align: center;
+      border-color: white;
+      color: white;
+     
+      background: linear-gradient(#0ca0dc , #012cb7 , #00116d );
+    }
+footer{
+  background-color: white;
+  color: #00116d;
+  margin-top: 10%;
+
+}
+li{ color: #00116d;}
+
+    /* body{background: radial-gradient(ellipse at top, #0ca0dc, #012cb7 ,#00116d);} */
+  </style>
+</head>
+
+<body>
+  <!-- navbar start -->
+  <header  class="p-3 " style="  background: linear-gradient( #0ca0dc, #012cb7 ,#00116d);">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+      </symbol>
+    </svg>
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <img src="./logo.png" alt="" width="100px">
+          <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="./overview.html" class="nav-link px-2 text-white">Overview</a></li>
+          <!-- <li><a href="#" class="nav-link px-2 text-white">Trailers</a></li> -->
+          <li><a href="./about.html" class="nav-link px-2 text-white">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown" aria-expanded="false">I
+              Wanna</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./Watch a Disney Movie.html" target="_blank">Watch the Movie</a></li>
+              <li><a class="dropdown-item" href="./become character.html" target="_blank">become a Disney Character</a></li>
+
+            </ul>
+          </li>
+
+          </li>
+
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search..."
+            aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn  ">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- navbar ends -->
+  <!-- carousel -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img id="img1" src="./b1.png" class="d-block  w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img id="img2" src="./b3.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img id="img3" src="./b2.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- carousel ends -->
+
+
+  <!-- cast starts -->
+  <section>
+    <h2>Frozen (2013):</h2>
+   
+    <h3>Cast and their Traits</h3>
+    
+    <div class="card-group">
+      <div class="card" data-aos="flip-left">
+        <img src="./anna.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Anna(Kristen Bell)</h5>
+          <p class="card-text">Anna is the younger sister of Elsa and is known for her cheerful and optimistic
+            personality. She is determined to mend her relationship with Elsa and restore their sisterly bond. Anna is
+            also portrayed as a selfless and courageous character who risks her own safety to protect the people she
+            loves.</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <img src="./elsa.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Elsa(Idina Menzel)</h5>
+          <p class="card-text">Elsa is the older sister of Anna and has the power to create and control ice and snow.
+            She is initially fearful and hesitant to use her powers, but overcomes her fears and embraces them in the
+            song "Let It Go". Elsa is portrayed as a kind, caring, and protective sister who would do anything to keep
+            Anna safe.</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <img src="./olaf.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Olaf(Josh Gad)</h5>
+          <p class="card-text">Olaf is a snowman created by Elsa's magic and is known for his humorous and innocent
+            personality. He is curious and childlike, often asking questions and seeking new experiences. Olaf is also
+            very loyal to his friends and is willing to risk his own safety to help them.</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <img src="./kristoff.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kristoff(Jonathan Groff)</h5>
+          <p class="card-text">TKristoff is an ice harvester who becomes Anna's love interest. He is portrayed as a
+            rugged and independent character who is skilled at survival in the wilderness. Despite his rough exterior,
+            Kristoff is also shown to have a kind and caring heart, especially towards his reindeer, Sven.</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <img src="./hans.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hans(Santino Fontana)</h5>
+          <p class="card-text">Hans from Frozen 1 is characterized as "manipulative." He portrays himself as charming
+            and kind but is revealed to be deceitful, conniving, and a master manipulator. He gains the trust of Anna
+            and Elsa, but ultimately betrays them for his own gain, proving his true nature as a manipulative character.
+          </p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+    </div>
+    <h3>Crew</h3>
+    <ul class="list-group list-group-flush" id="ulst" >
+      <li class="list-group-item" >Directed by Chris Buck and Jennifer Lee</li>
+      <li class="list-group-item" >Produced by Peter Del Vecho</li>
+      <li class="list-group-item" >Screenplay by Jennifer Lee</li>
+      <li class="list-group-item" >Music by Kristen Anderson-Lopez and Robert Lopez</li>
+      <!-- <li class="list-group-item">And a fifth one</li> -->
+    </ul>
+  </section>
+
+  <!-- frozen2 cast, traits and crew -->
+  <section>
+    <h2>Frozen 2:</h2>
+    <h3>Cast and their Traits</h3>
+    <div class="card-group">
+      <div class="card" data-aos="flip-right">
+        <img src="./anna2.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Anna(Kristen Bell)</h5>
+          <p class="card-text">Anna is still portrayed as a cheerful and optimistic character, but also becomes more
+            assertive and confident in Frozen 2. She is determined to support Elsa on her journey and protect their
+            kingdom from danger.</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card" data-aos="flip-right">
+        <img src="./elsa2.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Elsa(Idina Menzel)</h5>
+          <p class="card-text">In Frozen 2, Elsa continues to struggle with her powers and her place in the world. She
+            sets out on a journey to discover the truth about her past and the source of her powers. Elsa is still
+            portrayed as a caring and protective sister, but also undergoes a journey of self-discovery and learns to
+            embrace her true identity.</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card" data-aos="flip-right">
+        <img src="./olaf2.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Olaf(Josh Gad)</h5>
+          <p class="card-text">Olaf continues to provide comic relief in Frozen 2, but also faces some existential
+            questions about life and change. He is still portrayed as a loyal and supportive friend to Elsa and Anna.
+          </p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card" data-aos="flip-right">
+        <img src="./kristoff2.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kristoff(Jonathan Groff)</h5>
+          <p class="card-text">Kristoff is still portrayed as a rugged and independent character, but also becomes more
+            vulnerable and emotional in Frozen 2. He struggles to express his feelings towards Anna and sings a
+            heartfelt ballad called "Lost in the Woods".</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card" data-aos="flip-right">
+        <img src="./sven.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sven</h5>
+          <p class="card-text">Sven is still Kristoff's loyal and dependable companion, and even gets his own song
+            called "Reindeer(s) are Better Than People (Cont.)". He also plays an important role in the plot by helping
+            to transport the characters across the enchanted forest.
+          </p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+    </div>
+    <h3>Crew</h3>
+    <ul class="list-group list-group-flush" id="ulst" >
+      <li class="list-group-item" >Directed by Chris Buck and Jennifer Lee</li>
+      <li class="list-group-item" >Produced by Peter Del Vecho</li>
+      <li class="list-group-item" >Screenplay by Jennifer Lee</li>
+      <li class="list-group-item" >Music by Kristen Anderson-Lopez and Robert Lopez</li>
+      <!-- <li class="list-group-item">And a fifth one</li> -->
+    </ul>
+
+  </section>
+  <!-- cast ends -->
+
+  <!-- footer starts here -->
+  <footer >
+    <div class="container " >
+      <footer class="py-4">
+        <div class="row">
+          <div class="col-6 col-md-4 ">
+            <h5>Navbar</h5>
+            <ul class="nav flex-column" >
+              <li class="nav-item mb-2"><a href="/" class="nav-link p-0 " >Home</a></li>
+              <li class="nav-item mb-2"><a href="./overview.html" class="nav-link p-0 ">Overview</a></li>
+              <li class="nav-item mb-2"><a href="travel.html" class="nav-link p-0 ">Trailers</a></li>
+              <li class="nav-item mb-2"><a href="./Watch a Disney Movie.html" class="nav-link p-0 ">Watch full Movie</a></li>
+              <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 ">About Us</a></li>
+              <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 ">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="South.html" class="nav-link p-0 ">Trailers</a></li>
+              <li class="nav-item mb-2"><a href="South.html" class="nav-link p-0 ">Songs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 mb-3">
+            <h5>Contact Me</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">Ph:<a href="#" class="nav-link p-0 text-muted">033*-*******</a></li>
+              <li class="nav-item mb-2">E-mail:<a href="#" class="nav-link p-0 text-muted">toobtq@gmail.com</a>
+              </li>
+
+            </ul>
+          </div>
+
+          
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between border-top " >
+          <p>&copy; All rights reserved.</p>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex ">
+            <li class="ms-3"><a class="white" href="//twitter.com/?lang=en" target="_blank "><svg
+                  class="bi bi bi-twitter" width="24" height="24" xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="#00116d" class="bi " viewBox="0 0 16 16">
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                  <use xlink:href="#twitter" />
+                </svg></a></li>
+            <li class="ms-3"><a class="white" href="https://www.instagram.com/" target="_blank"><svg class="bi"
+                  width="24" height="24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00116d"
+                  class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                  >
+                  <use xlink:href="#instagram" />
+                </svg></a></li>
+            <li class="ms-3"><a class="white" target="_blank"
+                href="https://www.facebook.com/campaign/landing.php?campaign_id=1653377901&extra_1=s%7Cc%7C318307045126%7Ce%7Cfacebook%27%7C&placement=&creative=318307045126&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1653377901%26adgroupid%3D65139789042%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D9077147%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA2fmdBhBpEiwA4CcHzdRZKVMmTpzj_2v0_5koarbphsriRt4SmR2E9PMOZeepEljHppkFwhoC0t0QAvD_BwE"><svg
+                  class="bi" width="24" height="24" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="#00116d" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                  >
+                  <use xlink:href="#facebook" />
+                </svg></a></li>
+          </ul>
+        </div>
+      </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
